@@ -1,11 +1,7 @@
-export const Input = () => {
+export const Input = ({...reset}) => {
     return (
-        <div className="add-book-row">
-            <input
-                className="input"
-                id="bookInput"
-                placeholder="Название книги..." />
-            <button className="btn" id="addBtn">Добавить на полку</button>
-        </div>
+        <input
+            className="input"
+            {...reset} />
     )
 }
